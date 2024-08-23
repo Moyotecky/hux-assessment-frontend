@@ -1,7 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 
+require('dotenv').config();
+
 const inter = Inter({ subsets: ["latin"] });
+const apiUrl = process.env.API_BASE_URL;
 
 export const metadata = {
   title: "Create Next App",
